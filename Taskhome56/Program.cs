@@ -8,61 +8,64 @@ int m = InputNumbers("Введите m: ");
 int n = InputNumbers("Введите n: ");
 int range = InputNumbers("Введите диапазон: от 1 до ");
 
-int[,] array = new int[m, n];
-CreateArray(array);
-WriteArray(array);
-
-int minSumLine = 0;
-int sumLine = SumLineElements(array, 0);
-for (int i = 1; i < array.GetLength(0); i++)
+int[,] GetArray(int n, int m, int max)
 {
-  int tempSumLine = SumLineElements(array, i);
-  if (sumLine > tempSumLine)
-  {
-    sumLine = tempSumLine;
-    minSumLine = i;
-  }
+    int[,] Array = new int[n, m];
+    var rnd = new Random();
+    for (int i = 0; i < Array.GetLength(0); i++)
+    {
+        for (int j = 0; j < Array.GetLength(1); j++)
+        {
+            Array[i, j] = rnd.Next(1, max);
+        }
+    }
+    return Array;
 }
-
-Console.WriteLine($"\n{minSumLine+1} - строкa с наименьшей суммой ({sumLine}) элементов ");
-
-
-int SumLineElements(int[,] array, int i)
+void PrintArray(int[,] Array)
 {
-  int sumLine = array[i,0];
-  for (int j = 1; j < array.GetLength(1); j++)
-  {
-    sumLine += array[i,j];
-  }
-  return sumLine;
+
+    for (int i = 0; i < Array.GetLength(0); i++)
+    {
+        for (int j = 0; j < Array.GetLength(1); j++)
+        {
+            Console.Write($"|");
+            Console.Write($"{Array[i, j],3}" + "\t");
+        }
+        Console.WriteLine();
+    }
 }
-
-int InputNumbers(string input)
+double[] SumArrayRown(int[,] array)
 {
-  Console.Write(input);
-  int output = Convert.ToInt32(Console.ReadLine());
-  return output;
-}
-
-void CreateArray(int[,] array)
-{
-  for (int i = 0; i < array.GetLength(0); i++)
-  {
+    double sum = 0;
+    double[] SumArray = new double[array.GetLength(1)];
     for (int j = 0; j < array.GetLength(1); j++)
     {
-      array[i, j] = new Random().Next(range);
+        for (int i = 0; i < array.GetLength(0); i++)
+        {
+            sum = sum + array[i, j];
+        }
+        SumArray[j] = sum;
+        sum = 0;
     }
-  }
+    return SumArray;
 }
-
-void WriteArray (int[,] array)
+void SumRownPrint(double[] Array)
 {
-  for (int i = 0; i < array.GetLength(0); i++)
-  {
-    for (int j = 0; j < array.GetLength(1); j++)
+    double min = double.MinValue;
+    int n = 0;
+
+    for (int i = 0; i < Array.GetLength(0); i++)
     {
-      Console.Write(array[i,j] + " ");
+        if (min < Array[i])
+        {
+            min = Array[i];
+            n = i;
+        }
     }
-    Console.WriteLine();
-  }
+    Console.WriteLine($"{n} строка");
 }
+int[,] result = GetArray(n, m, max);
+PrintArray(result);
+Console.WriteLine();
+double[] result1 = SumArrayRown(result);
+SumRownPrint(result1);
