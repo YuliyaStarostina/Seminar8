@@ -1,0 +1,15 @@
+C:\Users\Asus\Desktop\Обучение\Seminar8\Taskhome58\obj\Debug\net6.0\Taskhome58.csproj.AssemblyReference.cache
+C:\Users\Asus\Desktop\Обучение\Seminar8\Taskhome58\obj\Debug\net6.0\Taskhome58.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus\Desktop\Обучение\Seminar8\Taskhome58\obj\Debug\net6.0\Taskhome58.AssemblyInfoInputs.cache
+C:\Users\Asus\Desktop\Обучение\Seminar8\Taskhome58\obj\Debug\net6.0\Taskhome58.AssemblyInfo.cs
+C:\Users\Asus\Desktop\Обучение\Seminar8\Taskhome58\obj\Debug\net6.0\Taskhome58.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Desktop\Обучение\Seminar8\Taskhome58\bin\Debug\net6.0\Taskhome58.exe
+C:\Users\Asus\Desktop\Обучение\Seminar8\Taskhome58\bin\Debug\net6.0\Taskhome58.deps.json
+C:\Users\Asus\Desktop\Обучение\Seminar8\Taskhome58\bin\Debug\net6.0\Taskhome58.runtimeconfig.json
+C:\Users\Asus\Desktop\Обучение\Seminar8\Taskhome58\bin\Debug\net6.0\Taskhome58.dll
+C:\Users\Asus\Desktop\Обучение\Seminar8\Taskhome58\bin\Debug\net6.0\Taskhome58.pdb
+C:\Users\Asus\Desktop\Обучение\Seminar8\Taskhome58\obj\Debug\net6.0\Taskhome58.dll
+C:\Users\Asus\Desktop\Обучение\Seminar8\Taskhome58\obj\Debug\net6.0\refint\Taskhome58.dll
+C:\Users\Asus\Desktop\Обучение\Seminar8\Taskhome58\obj\Debug\net6.0\Taskhome58.pdb
+C:\Users\Asus\Desktop\Обучение\Seminar8\Taskhome58\obj\Debug\net6.0\Taskhome58.genruntimeconfig.cache
+C:\Users\Asus\Desktop\Обучение\Seminar8\Taskhome58\obj\Debug\net6.0\ref\Taskhome58.dll
