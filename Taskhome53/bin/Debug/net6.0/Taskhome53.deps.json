@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Taskhome53/1.0.0": {
+        "runtime": {
+          "Taskhome53.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Taskhome53/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
